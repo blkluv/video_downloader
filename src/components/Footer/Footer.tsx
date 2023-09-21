@@ -2,13 +2,12 @@ import Image from "next/image";
 import Link from 'next/link';
 import Container from "../Container";
 import styles from "./Footer.module.css";
-import { FaTwitter, FaLinkedinIn, FaGithub, FaDiscord } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaDiscord } from "react-icons/fa";
 import type { Downloader } from "@/types";
 
 
 const medias = [
   { Icon: FaLinkedinIn, name: "linkedin" },
-  { Icon: FaTwitter, name: "twitter" },
   { Icon: FaGithub, name: "github" },
   { Icon: FaDiscord, name: "discord" },
 ];
@@ -31,7 +30,7 @@ const Footer = ({ downloaders }: FooterProps) => {
             />
             <p className={styles.description}>
               A powerful video downloader which supports downloading from
-              multiple websites built with performance and speed in mind.
+              your fav social media platform.
             </p>
             <div className={styles.icons}>
               {medias.map(({ Icon, name }) => (
@@ -51,7 +50,7 @@ const Footer = ({ downloaders }: FooterProps) => {
           </div>
         </div>
         <div className={styles.divider}>
-          &copy; {new Date().getFullYear()} SaveVideo Inc. All right reserved
+          &copy; {new Date().getFullYear()} 🅰️ SaveVideo. All right reserved
         </div>
       </Container>
     </footer>

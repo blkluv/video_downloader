@@ -40,6 +40,7 @@ const downloaderName = capitalizeWord(downloader.name);
     <>
       <Head>
         <title>{`${downloaderName} Video Downloader`}</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1842663588971716" crossOrigin="anonymous"></script>
       </Head>
       <section className={styles.hero}>
         <Container>
